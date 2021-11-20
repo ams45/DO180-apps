@@ -15,9 +15,9 @@
         }
         stage('Test') {
             steps {
-                TEST_CRED = credentials('test-cred-id')
+                //TEST_CRED = credentials('test-cred-id')
                 echo 'Testing..'
-                echo '$TEST_CRED' 
+                //echo '$TEST_CRED' 
                 sh 'echo $TEST_CRED'
             }
         }
