@@ -19,7 +19,7 @@
                 echo 'Testing..'
                 //echo '$TEST_CRED' 
                 sh 'echo $TEST_CRED'
-                sh 'curl http://$TEST_CRED_USR:$TEST_CRED_PSW@scalar1.fyre.ibm.com:5984'
+                sh "curl http://$TEST_CRED_USR:$TEST_CRED_PSW@scalar1.fyre.ibm.com:5984"
             }
         }
         stage('Deploy') {
